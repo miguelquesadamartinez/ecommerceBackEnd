@@ -52,7 +52,7 @@ Sistema backend de comercio electrónico desarrollado desde cero para gestión d
 
 **Proyecto**: Backend E-Commerce NoName  
 **Tipo**: Sistema empresarial de gestión de pedidos farmacéuticos  
-**Desarrollado por**: Miguel (migue)  
+**Desarrollado por**: Miguel Quesada Martinez  
 **Ubicación del Proyecto**: `C:\Users\migue\Documents\___CodeS\ecommerceBackEnd`  
 **Entorno**: Producción - Windows Server con IIS  
 **Estado**: En producción activa
@@ -260,18 +260,12 @@ ecommerceBackEnd/
 
 ### Backend
 
-- **Framework**: Laravel 12.x
-- **PHP**: 8.2+
+- **Framework**: Laravel 12.0
+- **PHP**: 8.3
 - **Database**: Microsoft SQL Server
 - **ORM**: Eloquent
 - **Authentication**: Laravel Sanctum (API tokens)
 - **LDAP**: LdapRecord Laravel (Active Directory integration)
-
-### Frontend
-
-- **Build Tool**: Vite 6.x
-- **CSS Framework**: Tailwind CSS 3.4.x
-- **JavaScript**: Axios para llamadas API
 
 ### Dependencias Principales PHP
 
@@ -1573,12 +1567,8 @@ Para problemas o consultas sobre el sistema:
 
 ---
 
-## 🙏 Agradecimientos
-
-Sistema desarrollado para **CallMedicall** en colaboración con **NoName SAS**.
-
 Framework: [Laravel](https://laravel.com)  
-Desarrollador: Miguel
+Desarrollador: Miguel Quesada Martinez
 
 ---
 
