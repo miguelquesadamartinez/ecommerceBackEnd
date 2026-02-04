@@ -1,0 +1,27 @@
+services:
+    # Servicio de PHP con Apache
+    app:
+        build:
+            context: .
+            dockerfile: Dockerfile
+        container_name: ecommerce_app
+        restart: unless-stopped
+        working_dir: /var/www/html
+        volumes:
+            - .:/var/www/html
+            - ./docker/php/local.ini:/usr/local/etc/php/conf.d/local.ini
+        ports:
+            - "8000:80"
+        extra_hosts:
+            - "host.docker.internal:host-gateway"
+        environment:
+            - DB_CONNECTION=sqlsrv
+            - DB_HOST=${DB_HOST}
+            - DB_PORT=${DB_PORT}
+            - DB_DATABASE=${DB_DATABASE}
+            - DB_USERNAME=${DB_USERNAME}
+            - DB_PASSWORD=${DB_PASSWORD}
+
+networks:
+    ecommerce_network:
+        driver: bridge
