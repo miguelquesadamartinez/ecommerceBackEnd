@@ -321,8 +321,8 @@ RECAPTCHA_SECRET_KEY=your-secret-key
 
 ```
 ecommerceBackEnd/
-├── docker-compose.yml          # Configuración de servicios Docker
-├── Dockerfile                  # Imagen PHP 8.2 + Apache + SQL Server drivers
+├── docker-compose.yml         # Configuración de servicios Docker
+├── Dockerfile                 # Imagen PHP 8.2 + Apache + SQL Server drivers
 ├── docker/
 │   └── php/
 │       └── local.ini          # Configuración personalizada de PHP
@@ -536,18 +536,18 @@ ecommerceBackEnd/
 │   ├── Console/Commands/          # Comandos Artisan personalizados
 │   │   └── bat/                   # Scripts batch para Windows
 │   ├── Exceptions/
-│   │   └── Handler.php           # Manejo global de excepciones
+│   │   └── Handler.php            # Manejo global de excepciones
 │   ├── Helpers/                   # Clases Helper principales
-│   │   ├── NomaneHelper.php     # Integración con NoName (SFTP, archivos)
-│   │   ├── FileProcessHelper.php # Procesamiento de archivos (2672 líneas)
-│   │   ├── GenerateHelper.php   # Generación de Excel y reportes
-│   │   ├── ExctractHelper.php   # Extracción de datos
-│   │   ├── OrderSaver.php       # Lógica de guardado de pedidos
-│   │   ├── XmlHelper.php        # Procesamiento XML
-│   │   └── InstallHelper.php    # Configuración inicial
+│   │   ├── NomaneHelper.php       # Integración con NoName (SFTP, archivos)
+│   │   ├── FileProcessHelper.php  # Procesamiento de archivos (2672 líneas)
+│   │   ├── GenerateHelper.php     # Generación de Excel y reportes
+│   │   ├── ExctractHelper.php     # Extracción de datos
+│   │   ├── OrderSaver.php         # Lógica de guardado de pedidos
+│   │   ├── XmlHelper.php          # Procesamiento XML
+│   │   └── InstallHelper.php      # Configuración inicial
 │   ├── Http/
 │   │   ├── Controllers/
-│   │   │   ├── Order/           # Controladores de pedidos
+│   │   │   ├── Order/                   # Controladores de pedidos
 │   │   │   │   ├── OrderCreateController.php
 │   │   │   │   ├── OrderItemController.php
 │   │   │   │   └── OrderUpdateController.php
@@ -558,7 +558,7 @@ ecommerceBackEnd/
 │   │   │   └── UserController.php
 │   │   └── Middleware/
 │   ├── Ldap/
-│   │   └── LdapUser.php         # Modelo LDAP
+│   │   └── LdapUser.php          # Modelo LDAP
 │   ├── Mail/                     # Plantillas de correo
 │   │   ├── BlockedOrdersReportMail.php
 │   │   ├── CustomerUpdateMail.php
@@ -567,7 +567,7 @@ ecommerceBackEnd/
 │   │   ├── TradePolicyEmail.php
 │   │   ├── VerifyPricesMail.php
 │   │   └── ExceptionOccured.php
-│   ├── Models/                   # Modelos Eloquent
+│   ├── Models/                  # Modelos Eloquent
 │   │   ├── Order.php            # Pedidos
 │   │   ├── OrderDetail.php      # Líneas de pedido
 │   │   ├── OrderCagedim.php     # Pedidos Cagedim
@@ -586,7 +586,7 @@ ecommerceBackEnd/
 ├── bootstrap/
 │   ├── app.php
 │   └── providers.php
-├── config/                       # Configuración
+├── config/                      # Configuración
 │   ├── app.php
 │   ├── auth.php
 │   ├── database.php             # SQL Server
